@@ -1,0 +1,320 @@
+{
+  "phase": "after",
+  "recorded_at": "2026-10-09T09:43:18.219678+00:00",
+  "model": "qwen-plus",
+  "temperature": 0,
+  "max_output_tokens": 512,
+  "sdk_retries": 0,
+  "fixture_sha256": "6ed430fc30f2d2b0fb81540aaa6b2943de8261c3697c28f67a37076484968800",
+  "source_sha256": "b9a82fc5e21aa18e2b6e709b12420893d880eb506468b7a6e1c0263b0f461ab3",
+  "scope": "Live generation only, fixed retrieval fixtures. No real Embedding/vector search, no production or answer-accuracy claim.",
+  "cases": [
+    {
+      "id": "empty-refund",
+      "kind": "no_evidence",
+      "question": "申请退款需要什么材料？",
+      "documents": [],
+      "status": "succeeded",
+      "result": {
+        "answer": "资料中没有明确说明。当前未检索到可用资料，请补充相关文档后重试。",
+        "sources": [],
+        "retrieved_docs": [],
+        "latency_ms": 0
+      },
+      "wall_ms": 0.009,
+      "calls": []
+    },
+    {
+      "id": "empty-activation",
+      "kind": "no_evidence",
+      "question": "付款后课程需要多久开通？",
+      "documents": [],
+      "status": "succeeded",
+      "result": {
+        "answer": "资料中没有明确说明。当前未检索到可用资料，请补充相关文档后重试。",
+        "sources": [],
+        "retrieved_docs": [],
+        "latency_ms": 0
+      },
+      "wall_ms": 0.007,
+      "calls": []
+    },
+    {
+      "id": "empty-offline",
+      "kind": "no_evidence",
+      "question": "课程可以下载后离线观看吗？",
+      "documents": [],
+      "status": "succeeded",
+      "result": {
+        "answer": "资料中没有明确说明。当前未检索到可用资料，请补充相关文档后重试。",
+        "sources": [],
+        "retrieved_docs": [],
+        "latency_ms": 0
+      },
+      "wall_ms": 0.007,
+      "calls": []
+    },
+    {
+      "id": "empty-invoice",
+      "kind": "no_evidence",
+      "question": "如何申请电子发票？",
+      "documents": [],
+      "status": "succeeded",
+      "result": {
+        "answer": "资料中没有明确说明。当前未检索到可用资料，请补充相关文档后重试。",
+        "sources": [],
+        "retrieved_docs": [],
+        "latency_ms": 0
+      },
+      "wall_ms": 0.005,
+      "calls": []
+    },
+    {
+      "id": "blank-support",
+      "kind": "no_evidence",
+      "question": "人工客服几点上班？",
+      "documents": [
+        " \n\t "
+      ],
+      "status": "succeeded",
+      "result": {
+        "answer": "资料中没有明确说明。当前未检索到可用资料，请补充相关文档后重试。",
+        "sources": [],
+        "retrieved_docs": [],
+        "latency_ms": 0
+      },
+      "wall_ms": 0.007,
+      "calls": []
+    },
+    {
+      "id": "blank-device",
+      "kind": "no_evidence",
+      "question": "一个账号支持多少台设备？",
+      "documents": [
+        " ",
+        "\n"
+      ],
+      "status": "succeeded",
+      "result": {
+        "answer": "资料中没有明确说明。当前未检索到可用资料，请补充相关文档后重试。",
+        "sources": [],
+        "retrieved_docs": [],
+        "latency_ms": 0
+      },
+      "wall_ms": 0.008,
+      "calls": []
+    },
+    {
+      "id": "grounded-refund",
+      "kind": "with_evidence",
+      "question": "申请退款需要什么材料？",
+      "documents": [
+        "测试机构退款材料说明：申请人需要提交订单编号与支付凭证。该说明没有规定审核时长。"
+      ],
+      "status": "succeeded",
+      "result": {
+        "answer": "申请退款需要提交订单编号与支付凭证。\n\n引用来源：[1]  \n可信度：高",
+        "sources": [
+          "self_authored_fixture.md"
+        ],
+        "retrieved_docs": [
+          {
+            "chunk_id": "grounded-refund-0",
+            "source": "self_authored_fixture.md",
+            "content": "测试机构退款材料说明：申请人需要提交订单编号与支付凭证。该说明没有规定审核时长。",
+            "metadata": {
+              "source": "self_authored_fixture.md",
+              "chunk_id": "grounded-refund-0"
+            }
+          }
+        ],
+        "latency_ms": 3629
+      },
+      "wall_ms": 3629.759,
+      "calls": [
+        {
+          "attempt": 11,
+          "case_id": "grounded-refund",
+          "phase": "after",
+          "model": "qwen-plus",
+          "max_tokens": 512,
+          "status": "succeeded",
+          "prompt_sha256": "7d263d0ff45ec4853a84de2b6a6b73102a54c5e2469a904fc2463a6c46848b52",
+          "provider_model": "qwen-plus",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 21,
+            "prompt_tokens": 167,
+            "total_tokens": 188,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cache_write_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "latency_ms": 3620.099
+        }
+      ]
+    },
+    {
+      "id": "grounded-activation",
+      "kind": "with_evidence",
+      "question": "付款后课程需要多久开通？",
+      "documents": [
+        "测试机构课程说明：支付成功后，课程通常在十分钟内开通；超过十分钟仍未开通，可提供订单编号联系人工客服。"
+      ],
+      "status": "succeeded",
+      "result": {
+        "answer": "付款后课程通常在十分钟内开通。  \n若超过十分钟仍未开通，可提供订单编号联系人工客服。\n\n引用来源：[1]  \n可信度：高",
+        "sources": [
+          "self_authored_fixture.md"
+        ],
+        "retrieved_docs": [
+          {
+            "chunk_id": "grounded-activation-0",
+            "source": "self_authored_fixture.md",
+            "content": "测试机构课程说明：支付成功后，课程通常在十分钟内开通；超过十分钟仍未开通，可提供订单编号联系人工客服。",
+            "metadata": {
+              "source": "self_authored_fixture.md",
+              "chunk_id": "grounded-activation-0"
+            }
+          }
+        ],
+        "latency_ms": 1472
+      },
+      "wall_ms": 1472.321,
+      "calls": [
+        {
+          "attempt": 12,
+          "case_id": "grounded-activation",
+          "phase": "after",
+          "model": "qwen-plus",
+          "max_tokens": 512,
+          "status": "succeeded",
+          "prompt_sha256": "42b01a3bca566c5e0e36436a420af52212bf3388e8f0f7e4687ebdfdb9a96314",
+          "provider_model": "qwen-plus",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 35,
+            "prompt_tokens": 174,
+            "total_tokens": 209,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cache_write_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "latency_ms": 1466.744
+        }
+      ]
+    },
+    {
+      "id": "grounded-offline",
+      "kind": "with_evidence",
+      "question": "课程可以下载后离线观看吗？",
+      "documents": [
+        "测试机构课程说明：Python 入门录播课支持在官方手机 App 内下载并离线观看，不支持导出视频文件。"
+      ],
+      "status": "succeeded",
+      "result": {
+        "answer": "可以，课程支持在官方手机 App 内下载并离线观看。\n\n引用来源：[1]  \n可信度：高",
+        "sources": [
+          "self_authored_fixture.md"
+        ],
+        "retrieved_docs": [
+          {
+            "chunk_id": "grounded-offline-0",
+            "source": "self_authored_fixture.md",
+            "content": "测试机构课程说明：Python 入门录播课支持在官方手机 App 内下载并离线观看，不支持导出视频文件。",
+            "metadata": {
+              "source": "self_authored_fixture.md",
+              "chunk_id": "grounded-offline-0"
+            }
+          }
+        ],
+        "latency_ms": 1309
+      },
+      "wall_ms": 1309.42,
+      "calls": [
+        {
+          "attempt": 13,
+          "case_id": "grounded-offline",
+          "phase": "after",
+          "model": "qwen-plus",
+          "max_tokens": 512,
+          "status": "succeeded",
+          "prompt_sha256": "eb7fa01dbaafdddc365114ef9b3ba7f7226a6c00dd0d2f342e6d9d89d47949fd",
+          "provider_model": "qwen-plus",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 27,
+            "prompt_tokens": 179,
+            "total_tokens": 206,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cache_write_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "latency_ms": 1301.686
+        }
+      ]
+    },
+    {
+      "id": "grounded-invoice",
+      "kind": "with_evidence",
+      "question": "如何申请电子发票？",
+      "documents": [
+        "测试机构开票说明：进入订单详情，选择申请发票，填写发票抬头和接收邮箱。"
+      ],
+      "status": "succeeded",
+      "result": {
+        "answer": "根据资料，申请电子发票的步骤如下：  \n进入订单详情页，选择“申请发票”，然后填写发票抬头和接收邮箱。\n\n该流程适用于电子发票申请，因资料中明确提到“填写接收邮箱”，可推断发票将通过邮件发送，即为电子发票。\n\n可信度：高  \n引用来源：[1]",
+        "sources": [
+          "self_authored_fixture.md"
+        ],
+        "retrieved_docs": [
+          {
+            "chunk_id": "grounded-invoice-0",
+            "source": "self_authored_fixture.md",
+            "content": "测试机构开票说明：进入订单详情，选择申请发票，填写发票抬头和接收邮箱。",
+            "metadata": {
+              "source": "self_authored_fixture.md",
+              "chunk_id": "grounded-invoice-0"
+            }
+          }
+        ],
+        "latency_ms": 2245
+      },
+      "wall_ms": 2245.343,
+      "calls": [
+        {
+          "attempt": 14,
+          "case_id": "grounded-invoice",
+          "phase": "after",
+          "model": "qwen-plus",
+          "max_tokens": 512,
+          "status": "succeeded",
+          "prompt_sha256": "67e9a7b52093498be83c352c4d4349dd7f385183ad590fe1a6e32dd0552f948f",
+          "provider_model": "qwen-plus",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 71,
+            "prompt_tokens": 164,
+            "total_tokens": 235,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cache_write_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "latency_ms": 2239.491
+        }
+      ]
+    }
+  ]
+}

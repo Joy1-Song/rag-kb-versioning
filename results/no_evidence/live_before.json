@@ -1,0 +1,497 @@
+{
+  "phase": "before",
+  "recorded_at": "2026-10-09T09:41:46.737130+00:00",
+  "model": "qwen-plus",
+  "temperature": 0,
+  "max_output_tokens": 512,
+  "sdk_retries": 0,
+  "fixture_sha256": "6ed430fc30f2d2b0fb81540aaa6b2943de8261c3697c28f67a37076484968800",
+  "source_sha256": "39fd2311538dff71c45fe6587e7776b86fcd682af06abad69a8b3ad5567a1812",
+  "scope": "Live generation only, fixed retrieval fixtures. No real Embedding/vector search, no production or answer-accuracy claim.",
+  "cases": [
+    {
+      "id": "empty-refund",
+      "kind": "no_evidence",
+      "question": "申请退款需要什么材料？",
+      "documents": [],
+      "status": "succeeded",
+      "result": {
+        "answer": "资料中没有明确说明。  \n可信度：低。",
+        "sources": [],
+        "retrieved_docs": [],
+        "latency_ms": 3155
+      },
+      "wall_ms": 3155.665,
+      "calls": [
+        {
+          "attempt": 1,
+          "case_id": "empty-refund",
+          "phase": "before",
+          "model": "qwen-plus",
+          "max_tokens": 512,
+          "status": "succeeded",
+          "prompt_sha256": "905f85368cfa744b2bddecdda5f7eea59dc461be2f9b0ba45bb55641cceb0fa8",
+          "provider_model": "qwen-plus",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 12,
+            "prompt_tokens": 123,
+            "total_tokens": 135,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cache_write_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "latency_ms": 3153.298
+        }
+      ]
+    },
+    {
+      "id": "empty-activation",
+      "kind": "no_evidence",
+      "question": "付款后课程需要多久开通？",
+      "documents": [],
+      "status": "succeeded",
+      "result": {
+        "answer": "资料中没有明确说明。  \n可信度：低。",
+        "sources": [],
+        "retrieved_docs": [],
+        "latency_ms": 904
+      },
+      "wall_ms": 904.485,
+      "calls": [
+        {
+          "attempt": 2,
+          "case_id": "empty-activation",
+          "phase": "before",
+          "model": "qwen-plus",
+          "max_tokens": 512,
+          "status": "succeeded",
+          "prompt_sha256": "6b8a8b1091c7b26d22320a1ac4372c37c11d9f6b304896a5ae33d8b5add03442",
+          "provider_model": "qwen-plus",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 12,
+            "prompt_tokens": 124,
+            "total_tokens": 136,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cache_write_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "latency_ms": 894.706
+        }
+      ]
+    },
+    {
+      "id": "empty-offline",
+      "kind": "no_evidence",
+      "question": "课程可以下载后离线观看吗？",
+      "documents": [],
+      "status": "succeeded",
+      "result": {
+        "answer": "资料中没有明确说明。\n\n引用来源：无相关资料。  \n可信度：低",
+        "sources": [],
+        "retrieved_docs": [],
+        "latency_ms": 1037
+      },
+      "wall_ms": 1037.263,
+      "calls": [
+        {
+          "attempt": 3,
+          "case_id": "empty-offline",
+          "phase": "before",
+          "model": "qwen-plus",
+          "max_tokens": 512,
+          "status": "succeeded",
+          "prompt_sha256": "65e51c15fbbb1bfd389d673ea0b9b3b4b1533458a7179e52be79a97967dabd54",
+          "provider_model": "qwen-plus",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 18,
+            "prompt_tokens": 126,
+            "total_tokens": 144,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cache_write_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "latency_ms": 1029.991
+        }
+      ]
+    },
+    {
+      "id": "empty-invoice",
+      "kind": "no_evidence",
+      "question": "如何申请电子发票？",
+      "documents": [],
+      "status": "succeeded",
+      "result": {
+        "answer": "资料中没有明确说明。  \n可信度：低。",
+        "sources": [],
+        "retrieved_docs": [],
+        "latency_ms": 947
+      },
+      "wall_ms": 947.281,
+      "calls": [
+        {
+          "attempt": 4,
+          "case_id": "empty-invoice",
+          "phase": "before",
+          "model": "qwen-plus",
+          "max_tokens": 512,
+          "status": "succeeded",
+          "prompt_sha256": "daa1756c704f29dd86f172b5e173659fb2d52379994c9e254752167325fdadf9",
+          "provider_model": "qwen-plus",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 12,
+            "prompt_tokens": 122,
+            "total_tokens": 134,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cache_write_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "latency_ms": 938.568
+        }
+      ]
+    },
+    {
+      "id": "blank-support",
+      "kind": "no_evidence",
+      "question": "人工客服几点上班？",
+      "documents": [
+        " \n\t "
+      ],
+      "status": "succeeded",
+      "result": {
+        "answer": "资料中没有明确说明。  \n引用来源：[1]  \n可信度：低",
+        "sources": [
+          "self_authored_fixture.md"
+        ],
+        "retrieved_docs": [
+          {
+            "chunk_id": "blank-support-0",
+            "source": "self_authored_fixture.md",
+            "content": " \n\t ",
+            "metadata": {
+              "source": "self_authored_fixture.md",
+              "chunk_id": "blank-support-0"
+            }
+          }
+        ],
+        "latency_ms": 1111
+      },
+      "wall_ms": 1111.676,
+      "calls": [
+        {
+          "attempt": 5,
+          "case_id": "blank-support",
+          "phase": "before",
+          "model": "qwen-plus",
+          "max_tokens": 512,
+          "status": "succeeded",
+          "prompt_sha256": "40cd903042292018ef0e8430bdaaf1a1d48516acc716eb60ff8b6e23521086d8",
+          "provider_model": "qwen-plus",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 18,
+            "prompt_tokens": 144,
+            "total_tokens": 162,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cache_write_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "latency_ms": 1102.156
+        }
+      ]
+    },
+    {
+      "id": "blank-device",
+      "kind": "no_evidence",
+      "question": "一个账号支持多少台设备？",
+      "documents": [
+        " ",
+        "\n"
+      ],
+      "status": "succeeded",
+      "result": {
+        "answer": "资料中没有明确说明。\n\n引用来源：[1], [2]  \n可信度：低",
+        "sources": [
+          "self_authored_fixture.md"
+        ],
+        "retrieved_docs": [
+          {
+            "chunk_id": "blank-device-0",
+            "source": "self_authored_fixture.md",
+            "content": " ",
+            "metadata": {
+              "source": "self_authored_fixture.md",
+              "chunk_id": "blank-device-0"
+            }
+          },
+          {
+            "chunk_id": "blank-device-1",
+            "source": "self_authored_fixture.md",
+            "content": "\n",
+            "metadata": {
+              "source": "self_authored_fixture.md",
+              "chunk_id": "blank-device-1"
+            }
+          }
+        ],
+        "latency_ms": 1110
+      },
+      "wall_ms": 1110.954,
+      "calls": [
+        {
+          "attempt": 6,
+          "case_id": "blank-device",
+          "phase": "before",
+          "model": "qwen-plus",
+          "max_tokens": 512,
+          "status": "succeeded",
+          "prompt_sha256": "b461f0ba04bd8c19ef437cc14691c51114ded2fc3fc474ea8ed50cba35ac2391",
+          "provider_model": "qwen-plus",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 20,
+            "prompt_tokens": 168,
+            "total_tokens": 188,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cache_write_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "latency_ms": 1098.826
+        }
+      ]
+    },
+    {
+      "id": "grounded-refund",
+      "kind": "with_evidence",
+      "question": "申请退款需要什么材料？",
+      "documents": [
+        "测试机构退款材料说明：申请人需要提交订单编号与支付凭证。该说明没有规定审核时长。"
+      ],
+      "status": "succeeded",
+      "result": {
+        "answer": "申请退款需要提交订单编号与支付凭证。\n\n引用来源：[1]  \n可信度：高",
+        "sources": [
+          "self_authored_fixture.md"
+        ],
+        "retrieved_docs": [
+          {
+            "chunk_id": "grounded-refund-0",
+            "source": "self_authored_fixture.md",
+            "content": "测试机构退款材料说明：申请人需要提交订单编号与支付凭证。该说明没有规定审核时长。",
+            "metadata": {
+              "source": "self_authored_fixture.md",
+              "chunk_id": "grounded-refund-0"
+            }
+          }
+        ],
+        "latency_ms": 1074
+      },
+      "wall_ms": 1074.429,
+      "calls": [
+        {
+          "attempt": 7,
+          "case_id": "grounded-refund",
+          "phase": "before",
+          "model": "qwen-plus",
+          "max_tokens": 512,
+          "status": "succeeded",
+          "prompt_sha256": "7d263d0ff45ec4853a84de2b6a6b73102a54c5e2469a904fc2463a6c46848b52",
+          "provider_model": "qwen-plus",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 21,
+            "prompt_tokens": 167,
+            "total_tokens": 188,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cache_write_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "latency_ms": 1067.853
+        }
+      ]
+    },
+    {
+      "id": "grounded-activation",
+      "kind": "with_evidence",
+      "question": "付款后课程需要多久开通？",
+      "documents": [
+        "测试机构课程说明：支付成功后，课程通常在十分钟内开通；超过十分钟仍未开通，可提供订单编号联系人工客服。"
+      ],
+      "status": "succeeded",
+      "result": {
+        "answer": "付款后课程通常在十分钟内开通。\n\n可信度：高  \n引用来源：[1]",
+        "sources": [
+          "self_authored_fixture.md"
+        ],
+        "retrieved_docs": [
+          {
+            "chunk_id": "grounded-activation-0",
+            "source": "self_authored_fixture.md",
+            "content": "测试机构课程说明：支付成功后，课程通常在十分钟内开通；超过十分钟仍未开通，可提供订单编号联系人工客服。",
+            "metadata": {
+              "source": "self_authored_fixture.md",
+              "chunk_id": "grounded-activation-0"
+            }
+          }
+        ],
+        "latency_ms": 1503
+      },
+      "wall_ms": 1503.333,
+      "calls": [
+        {
+          "attempt": 8,
+          "case_id": "grounded-activation",
+          "phase": "before",
+          "model": "qwen-plus",
+          "max_tokens": 512,
+          "status": "succeeded",
+          "prompt_sha256": "42b01a3bca566c5e0e36436a420af52212bf3388e8f0f7e4687ebdfdb9a96314",
+          "provider_model": "qwen-plus",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 20,
+            "prompt_tokens": 174,
+            "total_tokens": 194,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cache_write_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "latency_ms": 1494.746
+        }
+      ]
+    },
+    {
+      "id": "grounded-offline",
+      "kind": "with_evidence",
+      "question": "课程可以下载后离线观看吗？",
+      "documents": [
+        "测试机构课程说明：Python 入门录播课支持在官方手机 App 内下载并离线观看，不支持导出视频文件。"
+      ],
+      "status": "succeeded",
+      "result": {
+        "answer": "可以，课程支持在官方手机 App 内下载并离线观看。\n\n引用来源：[1]  \n可信度：高",
+        "sources": [
+          "self_authored_fixture.md"
+        ],
+        "retrieved_docs": [
+          {
+            "chunk_id": "grounded-offline-0",
+            "source": "self_authored_fixture.md",
+            "content": "测试机构课程说明：Python 入门录播课支持在官方手机 App 内下载并离线观看，不支持导出视频文件。",
+            "metadata": {
+              "source": "self_authored_fixture.md",
+              "chunk_id": "grounded-offline-0"
+            }
+          }
+        ],
+        "latency_ms": 1365
+      },
+      "wall_ms": 1365.374,
+      "calls": [
+        {
+          "attempt": 9,
+          "case_id": "grounded-offline",
+          "phase": "before",
+          "model": "qwen-plus",
+          "max_tokens": 512,
+          "status": "succeeded",
+          "prompt_sha256": "eb7fa01dbaafdddc365114ef9b3ba7f7226a6c00dd0d2f342e6d9d89d47949fd",
+          "provider_model": "qwen-plus",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 27,
+            "prompt_tokens": 179,
+            "total_tokens": 206,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cache_write_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "latency_ms": 1356.164
+        }
+      ]
+    },
+    {
+      "id": "grounded-invoice",
+      "kind": "with_evidence",
+      "question": "如何申请电子发票？",
+      "documents": [
+        "测试机构开票说明：进入订单详情，选择申请发票，填写发票抬头和接收邮箱。"
+      ],
+      "status": "succeeded",
+      "result": {
+        "answer": "根据资料，申请电子发票的步骤如下：  \n进入订单详情页，选择“申请发票”，然后填写发票抬头和接收邮箱。\n\n该流程适用于电子发票申请，因资料中明确提到“填写……接收邮箱”，可推断发票将通过邮箱发送，即为电子发票。\n\n可信度：高  \n引用来源：[1]",
+        "sources": [
+          "self_authored_fixture.md"
+        ],
+        "retrieved_docs": [
+          {
+            "chunk_id": "grounded-invoice-0",
+            "source": "self_authored_fixture.md",
+            "content": "测试机构开票说明：进入订单详情，选择申请发票，填写发票抬头和接收邮箱。",
+            "metadata": {
+              "source": "self_authored_fixture.md",
+              "chunk_id": "grounded-invoice-0"
+            }
+          }
+        ],
+        "latency_ms": 2293
+      },
+      "wall_ms": 2293.551,
+      "calls": [
+        {
+          "attempt": 10,
+          "case_id": "grounded-invoice",
+          "phase": "before",
+          "model": "qwen-plus",
+          "max_tokens": 512,
+          "status": "succeeded",
+          "prompt_sha256": "67e9a7b52093498be83c352c4d4349dd7f385183ad590fe1a6e32dd0552f948f",
+          "provider_model": "qwen-plus",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 72,
+            "prompt_tokens": 164,
+            "total_tokens": 236,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cache_write_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "latency_ms": 2283.993
+        }
+      ]
+    }
+  ]
+}

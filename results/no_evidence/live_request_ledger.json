@@ -1,0 +1,327 @@
+{
+  "limit": 20,
+  "requests": [
+    {
+      "attempt": 1,
+      "case_id": "empty-refund",
+      "phase": "before",
+      "model": "qwen-plus",
+      "max_tokens": 512,
+      "status": "succeeded",
+      "prompt_sha256": "905f85368cfa744b2bddecdda5f7eea59dc461be2f9b0ba45bb55641cceb0fa8",
+      "provider_model": "qwen-plus",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 123,
+        "total_tokens": 135,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "latency_ms": 3153.298
+    },
+    {
+      "attempt": 2,
+      "case_id": "empty-activation",
+      "phase": "before",
+      "model": "qwen-plus",
+      "max_tokens": 512,
+      "status": "succeeded",
+      "prompt_sha256": "6b8a8b1091c7b26d22320a1ac4372c37c11d9f6b304896a5ae33d8b5add03442",
+      "provider_model": "qwen-plus",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 124,
+        "total_tokens": 136,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "latency_ms": 894.706
+    },
+    {
+      "attempt": 3,
+      "case_id": "empty-offline",
+      "phase": "before",
+      "model": "qwen-plus",
+      "max_tokens": 512,
+      "status": "succeeded",
+      "prompt_sha256": "65e51c15fbbb1bfd389d673ea0b9b3b4b1533458a7179e52be79a97967dabd54",
+      "provider_model": "qwen-plus",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 18,
+        "prompt_tokens": 126,
+        "total_tokens": 144,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "latency_ms": 1029.991
+    },
+    {
+      "attempt": 4,
+      "case_id": "empty-invoice",
+      "phase": "before",
+      "model": "qwen-plus",
+      "max_tokens": 512,
+      "status": "succeeded",
+      "prompt_sha256": "daa1756c704f29dd86f172b5e173659fb2d52379994c9e254752167325fdadf9",
+      "provider_model": "qwen-plus",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 122,
+        "total_tokens": 134,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "latency_ms": 938.568
+    },
+    {
+      "attempt": 5,
+      "case_id": "blank-support",
+      "phase": "before",
+      "model": "qwen-plus",
+      "max_tokens": 512,
+      "status": "succeeded",
+      "prompt_sha256": "40cd903042292018ef0e8430bdaaf1a1d48516acc716eb60ff8b6e23521086d8",
+      "provider_model": "qwen-plus",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 18,
+        "prompt_tokens": 144,
+        "total_tokens": 162,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "latency_ms": 1102.156
+    },
+    {
+      "attempt": 6,
+      "case_id": "blank-device",
+      "phase": "before",
+      "model": "qwen-plus",
+      "max_tokens": 512,
+      "status": "succeeded",
+      "prompt_sha256": "b461f0ba04bd8c19ef437cc14691c51114ded2fc3fc474ea8ed50cba35ac2391",
+      "provider_model": "qwen-plus",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 20,
+        "prompt_tokens": 168,
+        "total_tokens": 188,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "latency_ms": 1098.826
+    },
+    {
+      "attempt": 7,
+      "case_id": "grounded-refund",
+      "phase": "before",
+      "model": "qwen-plus",
+      "max_tokens": 512,
+      "status": "succeeded",
+      "prompt_sha256": "7d263d0ff45ec4853a84de2b6a6b73102a54c5e2469a904fc2463a6c46848b52",
+      "provider_model": "qwen-plus",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 167,
+        "total_tokens": 188,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "latency_ms": 1067.853
+    },
+    {
+      "attempt": 8,
+      "case_id": "grounded-activation",
+      "phase": "before",
+      "model": "qwen-plus",
+      "max_tokens": 512,
+      "status": "succeeded",
+      "prompt_sha256": "42b01a3bca566c5e0e36436a420af52212bf3388e8f0f7e4687ebdfdb9a96314",
+      "provider_model": "qwen-plus",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 20,
+        "prompt_tokens": 174,
+        "total_tokens": 194,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "latency_ms": 1494.746
+    },
+    {
+      "attempt": 9,
+      "case_id": "grounded-offline",
+      "phase": "before",
+      "model": "qwen-plus",
+      "max_tokens": 512,
+      "status": "succeeded",
+      "prompt_sha256": "eb7fa01dbaafdddc365114ef9b3ba7f7226a6c00dd0d2f342e6d9d89d47949fd",
+      "provider_model": "qwen-plus",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 27,
+        "prompt_tokens": 179,
+        "total_tokens": 206,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "latency_ms": 1356.164
+    },
+    {
+      "attempt": 10,
+      "case_id": "grounded-invoice",
+      "phase": "before",
+      "model": "qwen-plus",
+      "max_tokens": 512,
+      "status": "succeeded",
+      "prompt_sha256": "67e9a7b52093498be83c352c4d4349dd7f385183ad590fe1a6e32dd0552f948f",
+      "provider_model": "qwen-plus",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 72,
+        "prompt_tokens": 164,
+        "total_tokens": 236,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "latency_ms": 2283.993
+    },
+    {
+      "attempt": 11,
+      "case_id": "grounded-refund",
+      "phase": "after",
+      "model": "qwen-plus",
+      "max_tokens": 512,
+      "status": "succeeded",
+      "prompt_sha256": "7d263d0ff45ec4853a84de2b6a6b73102a54c5e2469a904fc2463a6c46848b52",
+      "provider_model": "qwen-plus",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 167,
+        "total_tokens": 188,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "latency_ms": 3620.099
+    },
+    {
+      "attempt": 12,
+      "case_id": "grounded-activation",
+      "phase": "after",
+      "model": "qwen-plus",
+      "max_tokens": 512,
+      "status": "succeeded",
+      "prompt_sha256": "42b01a3bca566c5e0e36436a420af52212bf3388e8f0f7e4687ebdfdb9a96314",
+      "provider_model": "qwen-plus",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 35,
+        "prompt_tokens": 174,
+        "total_tokens": 209,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "latency_ms": 1466.744
+    },
+    {
+      "attempt": 13,
+      "case_id": "grounded-offline",
+      "phase": "after",
+      "model": "qwen-plus",
+      "max_tokens": 512,
+      "status": "succeeded",
+      "prompt_sha256": "eb7fa01dbaafdddc365114ef9b3ba7f7226a6c00dd0d2f342e6d9d89d47949fd",
+      "provider_model": "qwen-plus",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 27,
+        "prompt_tokens": 179,
+        "total_tokens": 206,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "latency_ms": 1301.686
+    },
+    {
+      "attempt": 14,
+      "case_id": "grounded-invoice",
+      "phase": "after",
+      "model": "qwen-plus",
+      "max_tokens": 512,
+      "status": "succeeded",
+      "prompt_sha256": "67e9a7b52093498be83c352c4d4349dd7f385183ad590fe1a6e32dd0552f948f",
+      "provider_model": "qwen-plus",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 71,
+        "prompt_tokens": 164,
+        "total_tokens": 235,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        }
+      },
+      "latency_ms": 2239.491
+    }
+  ]
+}

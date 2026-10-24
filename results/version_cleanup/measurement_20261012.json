@@ -1,0 +1,443 @@
+{
+  "note": "RAG part of the 2026-10-12 repeated-operation measurement (Agent part omitted). before = code before versioned ingestion (snapshot in experiments/baseline_20261012), after = versioned ingestion (this repository).",
+  "extracted_from_sha256": "4423dbae02eda43b0f5abf1a0531ad54fdf4be9708c2dfd0e370a36256dc562f",
+  "network_blocked": true,
+  "repetition_count": 10,
+  "results": {
+    "before": {
+      "scenario": "10 successive versions under one filename, then 10 retries of the latest version",
+      "mode": "real local Chroma with hash embeddings; no semantic-quality or billing measurement",
+      "records": [
+        {
+          "version": 1,
+          "text": "Policy revision 1: current revision is 1.",
+          "result": {
+            "added_files": 1,
+            "skipped_files": 0,
+            "added_chunks": 1
+          },
+          "stored_texts": [
+            "Policy revision 1: current revision is 1."
+          ],
+          "stored_chunks": 1
+        },
+        {
+          "version": 2,
+          "text": "Policy revision 2: current revision is 2.",
+          "result": {
+            "added_files": 1,
+            "skipped_files": 0,
+            "added_chunks": 1
+          },
+          "stored_texts": [
+            "Policy revision 1: current revision is 1.",
+            "Policy revision 2: current revision is 2."
+          ],
+          "stored_chunks": 2
+        },
+        {
+          "version": 3,
+          "text": "Policy revision 3: current revision is 3.",
+          "result": {
+            "added_files": 1,
+            "skipped_files": 0,
+            "added_chunks": 1
+          },
+          "stored_texts": [
+            "Policy revision 1: current revision is 1.",
+            "Policy revision 2: current revision is 2.",
+            "Policy revision 3: current revision is 3."
+          ],
+          "stored_chunks": 3
+        },
+        {
+          "version": 4,
+          "text": "Policy revision 4: current revision is 4.",
+          "result": {
+            "added_files": 1,
+            "skipped_files": 0,
+            "added_chunks": 1
+          },
+          "stored_texts": [
+            "Policy revision 1: current revision is 1.",
+            "Policy revision 2: current revision is 2.",
+            "Policy revision 3: current revision is 3.",
+            "Policy revision 4: current revision is 4."
+          ],
+          "stored_chunks": 4
+        },
+        {
+          "version": 5,
+          "text": "Policy revision 5: current revision is 5.",
+          "result": {
+            "added_files": 1,
+            "skipped_files": 0,
+            "added_chunks": 1
+          },
+          "stored_texts": [
+            "Policy revision 1: current revision is 1.",
+            "Policy revision 2: current revision is 2.",
+            "Policy revision 3: current revision is 3.",
+            "Policy revision 4: current revision is 4.",
+            "Policy revision 5: current revision is 5."
+          ],
+          "stored_chunks": 5
+        },
+        {
+          "version": 6,
+          "text": "Policy revision 6: current revision is 6.",
+          "result": {
+            "added_files": 1,
+            "skipped_files": 0,
+            "added_chunks": 1
+          },
+          "stored_texts": [
+            "Policy revision 1: current revision is 1.",
+            "Policy revision 2: current revision is 2.",
+            "Policy revision 3: current revision is 3.",
+            "Policy revision 4: current revision is 4.",
+            "Policy revision 5: current revision is 5.",
+            "Policy revision 6: current revision is 6."
+          ],
+          "stored_chunks": 6
+        },
+        {
+          "version": 7,
+          "text": "Policy revision 7: current revision is 7.",
+          "result": {
+            "added_files": 1,
+            "skipped_files": 0,
+            "added_chunks": 1
+          },
+          "stored_texts": [
+            "Policy revision 1: current revision is 1.",
+            "Policy revision 2: current revision is 2.",
+            "Policy revision 3: current revision is 3.",
+            "Policy revision 4: current revision is 4.",
+            "Policy revision 5: current revision is 5.",
+            "Policy revision 6: current revision is 6.",
+            "Policy revision 7: current revision is 7."
+          ],
+          "stored_chunks": 7
+        },
+        {
+          "version": 8,
+          "text": "Policy revision 8: current revision is 8.",
+          "result": {
+            "added_files": 1,
+            "skipped_files": 0,
+            "added_chunks": 1
+          },
+          "stored_texts": [
+            "Policy revision 1: current revision is 1.",
+            "Policy revision 2: current revision is 2.",
+            "Policy revision 3: current revision is 3.",
+            "Policy revision 4: current revision is 4.",
+            "Policy revision 5: current revision is 5.",
+            "Policy revision 6: current revision is 6.",
+            "Policy revision 7: current revision is 7.",
+            "Policy revision 8: current revision is 8."
+          ],
+          "stored_chunks": 8
+        },
+        {
+          "version": 9,
+          "text": "Policy revision 9: current revision is 9.",
+          "result": {
+            "added_files": 1,
+            "skipped_files": 0,
+            "added_chunks": 1
+          },
+          "stored_texts": [
+            "Policy revision 1: current revision is 1.",
+            "Policy revision 2: current revision is 2.",
+            "Policy revision 3: current revision is 3.",
+            "Policy revision 4: current revision is 4.",
+            "Policy revision 5: current revision is 5.",
+            "Policy revision 6: current revision is 6.",
+            "Policy revision 7: current revision is 7.",
+            "Policy revision 8: current revision is 8.",
+            "Policy revision 9: current revision is 9."
+          ],
+          "stored_chunks": 9
+        },
+        {
+          "version": 10,
+          "text": "Policy revision 10: current revision is 10.",
+          "result": {
+            "added_files": 1,
+            "skipped_files": 0,
+            "added_chunks": 1
+          },
+          "stored_texts": [
+            "Policy revision 1: current revision is 1.",
+            "Policy revision 2: current revision is 2.",
+            "Policy revision 3: current revision is 3.",
+            "Policy revision 4: current revision is 4.",
+            "Policy revision 5: current revision is 5.",
+            "Policy revision 6: current revision is 6.",
+            "Policy revision 7: current revision is 7.",
+            "Policy revision 8: current revision is 8.",
+            "Policy revision 9: current revision is 9.",
+            "Policy revision 10: current revision is 10."
+          ],
+          "stored_chunks": 10
+        }
+      ],
+      "retries": [
+        {
+          "added_files": 0,
+          "skipped_files": 1,
+          "added_chunks": 0
+        },
+        {
+          "added_files": 0,
+          "skipped_files": 1,
+          "added_chunks": 0
+        },
+        {
+          "added_files": 0,
+          "skipped_files": 1,
+          "added_chunks": 0
+        },
+        {
+          "added_files": 0,
+          "skipped_files": 1,
+          "added_chunks": 0
+        },
+        {
+          "added_files": 0,
+          "skipped_files": 1,
+          "added_chunks": 0
+        },
+        {
+          "added_files": 0,
+          "skipped_files": 1,
+          "added_chunks": 0
+        },
+        {
+          "added_files": 0,
+          "skipped_files": 1,
+          "added_chunks": 0
+        },
+        {
+          "added_files": 0,
+          "skipped_files": 1,
+          "added_chunks": 0
+        },
+        {
+          "added_files": 0,
+          "skipped_files": 1,
+          "added_chunks": 0
+        },
+        {
+          "added_files": 0,
+          "skipped_files": 1,
+          "added_chunks": 0
+        }
+      ],
+      "versions_uploaded": 10,
+      "retained_chunks": 10,
+      "stale_chunks": 9,
+      "latest_version_present": true,
+      "embedding_batch_calls": 10,
+      "embedding_texts": 10,
+      "extra_embedding_calls_on_10_retries": 0
+    },
+    "after": {
+      "scenario": "10 successive versions under one filename, then 10 retries of the latest version",
+      "mode": "real local Chroma with hash embeddings; no semantic-quality or billing measurement",
+      "records": [
+        {
+          "version": 1,
+          "text": "Policy revision 1: current revision is 1.",
+          "result": {
+            "added_files": 1,
+            "skipped_files": 0,
+            "added_chunks": 1
+          },
+          "stored_texts": [
+            "Policy revision 1: current revision is 1."
+          ],
+          "stored_chunks": 1
+        },
+        {
+          "version": 2,
+          "text": "Policy revision 2: current revision is 2.",
+          "result": {
+            "added_files": 1,
+            "skipped_files": 0,
+            "added_chunks": 1
+          },
+          "stored_texts": [
+            "Policy revision 2: current revision is 2."
+          ],
+          "stored_chunks": 1
+        },
+        {
+          "version": 3,
+          "text": "Policy revision 3: current revision is 3.",
+          "result": {
+            "added_files": 1,
+            "skipped_files": 0,
+            "added_chunks": 1
+          },
+          "stored_texts": [
+            "Policy revision 3: current revision is 3."
+          ],
+          "stored_chunks": 1
+        },
+        {
+          "version": 4,
+          "text": "Policy revision 4: current revision is 4.",
+          "result": {
+            "added_files": 1,
+            "skipped_files": 0,
+            "added_chunks": 1
+          },
+          "stored_texts": [
+            "Policy revision 4: current revision is 4."
+          ],
+          "stored_chunks": 1
+        },
+        {
+          "version": 5,
+          "text": "Policy revision 5: current revision is 5.",
+          "result": {
+            "added_files": 1,
+            "skipped_files": 0,
+            "added_chunks": 1
+          },
+          "stored_texts": [
+            "Policy revision 5: current revision is 5."
+          ],
+          "stored_chunks": 1
+        },
+        {
+          "version": 6,
+          "text": "Policy revision 6: current revision is 6.",
+          "result": {
+            "added_files": 1,
+            "skipped_files": 0,
+            "added_chunks": 1
+          },
+          "stored_texts": [
+            "Policy revision 6: current revision is 6."
+          ],
+          "stored_chunks": 1
+        },
+        {
+          "version": 7,
+          "text": "Policy revision 7: current revision is 7.",
+          "result": {
+            "added_files": 1,
+            "skipped_files": 0,
+            "added_chunks": 1
+          },
+          "stored_texts": [
+            "Policy revision 7: current revision is 7."
+          ],
+          "stored_chunks": 1
+        },
+        {
+          "version": 8,
+          "text": "Policy revision 8: current revision is 8.",
+          "result": {
+            "added_files": 1,
+            "skipped_files": 0,
+            "added_chunks": 1
+          },
+          "stored_texts": [
+            "Policy revision 8: current revision is 8."
+          ],
+          "stored_chunks": 1
+        },
+        {
+          "version": 9,
+          "text": "Policy revision 9: current revision is 9.",
+          "result": {
+            "added_files": 1,
+            "skipped_files": 0,
+            "added_chunks": 1
+          },
+          "stored_texts": [
+            "Policy revision 9: current revision is 9."
+          ],
+          "stored_chunks": 1
+        },
+        {
+          "version": 10,
+          "text": "Policy revision 10: current revision is 10.",
+          "result": {
+            "added_files": 1,
+            "skipped_files": 0,
+            "added_chunks": 1
+          },
+          "stored_texts": [
+            "Policy revision 10: current revision is 10."
+          ],
+          "stored_chunks": 1
+        }
+      ],
+      "retries": [
+        {
+          "added_files": 0,
+          "skipped_files": 1,
+          "added_chunks": 0
+        },
+        {
+          "added_files": 0,
+          "skipped_files": 1,
+          "added_chunks": 0
+        },
+        {
+          "added_files": 0,
+          "skipped_files": 1,
+          "added_chunks": 0
+        },
+        {
+          "added_files": 0,
+          "skipped_files": 1,
+          "added_chunks": 0
+        },
+        {
+          "added_files": 0,
+          "skipped_files": 1,
+          "added_chunks": 0
+        },
+        {
+          "added_files": 0,
+          "skipped_files": 1,
+          "added_chunks": 0
+        },
+        {
+          "added_files": 0,
+          "skipped_files": 1,
+          "added_chunks": 0
+        },
+        {
+          "added_files": 0,
+          "skipped_files": 1,
+          "added_chunks": 0
+        },
+        {
+          "added_files": 0,
+          "skipped_files": 1,
+          "added_chunks": 0
+        },
+        {
+          "added_files": 0,
+          "skipped_files": 1,
+          "added_chunks": 0
+        }
+      ],
+      "versions_uploaded": 10,
+      "retained_chunks": 1,
+      "stale_chunks": 0,
+      "latest_version_present": true,
+      "embedding_batch_calls": 10,
+      "embedding_texts": 10,
+      "extra_embedding_calls_on_10_retries": 0
+    }
+  }
+}

@@ -1,0 +1,447 @@
+{
+  "embedding_model": "text-embedding-v4",
+  "fixture_sha256": "6109c44e5b0601bb1d5be9049809c94c8763c390c748a78455c296fd123a304e",
+  "documents": 12,
+  "records": [
+    {
+      "id": "R01",
+      "split": "development",
+      "question": "出差报销需要提交哪些凭证？",
+      "relevant_ids": [
+        "D01"
+      ],
+      "vector": [
+        "D01",
+        "D12",
+        "D11"
+      ],
+      "hybrid": [
+        "D01",
+        "D12",
+        "D08"
+      ]
+    },
+    {
+      "id": "R02",
+      "split": "development",
+      "question": "课程没开通过，买了三天，可以退全款吗？",
+      "relevant_ids": [
+        "D02"
+      ],
+      "vector": [
+        "D02",
+        "D03",
+        "D05"
+      ],
+      "hybrid": [
+        "D02",
+        "D09",
+        "D10"
+      ]
+    },
+    {
+      "id": "R03",
+      "split": "development",
+      "question": "Python入门课没网的时候能看吗？",
+      "relevant_ids": [
+        "D03"
+      ],
+      "vector": [
+        "D03",
+        "D02",
+        "D05"
+      ],
+      "hybrid": [
+        "D03",
+        "D07",
+        "D08"
+      ]
+    },
+    {
+      "id": "R04",
+      "split": "development",
+      "question": "PAY-E104 怎么处理？",
+      "relevant_ids": [
+        "D05"
+      ],
+      "vector": [
+        "D05",
+        "D06",
+        "D07"
+      ],
+      "hybrid": [
+        "D05",
+        "D06",
+        "D07"
+      ]
+    },
+    {
+      "id": "R05",
+      "split": "development",
+      "question": "PAY-E140 可以重新下单支付吗？",
+      "relevant_ids": [
+        "D06"
+      ],
+      "vector": [
+        "D06",
+        "D05",
+        "D02"
+      ],
+      "hybrid": [
+        "D06",
+        "D05",
+        "D02"
+      ]
+    },
+    {
+      "id": "R06",
+      "split": "development",
+      "question": "AUTH-R12 需要管理员授权吗？",
+      "relevant_ids": [
+        "D07"
+      ],
+      "vector": [
+        "D08",
+        "D07",
+        "D09"
+      ],
+      "hybrid": [
+        "D08",
+        "D07",
+        "D09"
+      ]
+    },
+    {
+      "id": "R07",
+      "split": "development",
+      "question": "AUTH-R21 刷新令牌就能解决吗？",
+      "relevant_ids": [
+        "D08"
+      ],
+      "vector": [
+        "D08",
+        "D07",
+        "D04"
+      ],
+      "hybrid": [
+        "D08",
+        "D07",
+        "D11"
+      ]
+    },
+    {
+      "id": "R08",
+      "split": "development",
+      "question": "PLAN-A17 的日志保留多久，支持审计API吗？",
+      "relevant_ids": [
+        "D09"
+      ],
+      "vector": [
+        "D09",
+        "D10",
+        "D11"
+      ],
+      "hybrid": [
+        "D09",
+        "D10",
+        "D11"
+      ]
+    },
+    {
+      "id": "R09",
+      "split": "development",
+      "question": "PLAN-A71 数据保留多久？",
+      "relevant_ids": [
+        "D10"
+      ],
+      "vector": [
+        "D10",
+        "D09",
+        "D11"
+      ],
+      "hybrid": [
+        "D10",
+        "D09",
+        "D12"
+      ]
+    },
+    {
+      "id": "R10",
+      "split": "development",
+      "question": "调用日志可以记录客户密码吗？",
+      "relevant_ids": [
+        "D11"
+      ],
+      "vector": [
+        "D11",
+        "D09",
+        "D04"
+      ],
+      "hybrid": [
+        "D11",
+        "D03",
+        "D02"
+      ]
+    },
+    {
+      "id": "R11",
+      "split": "development",
+      "question": "用户拒绝生成报告后还会发邮件吗？",
+      "relevant_ids": [
+        "D12"
+      ],
+      "vector": [
+        "D12",
+        "D09",
+        "D04"
+      ],
+      "hybrid": [
+        "D12",
+        "D09",
+        "D04"
+      ]
+    },
+    {
+      "id": "R12",
+      "split": "development",
+      "question": "公司提供海外医疗保险吗？",
+      "relevant_ids": [],
+      "vector": [
+        "D01",
+        "D09",
+        "D10"
+      ],
+      "hybrid": [
+        "D09",
+        "D03",
+        "D01"
+      ]
+    },
+    {
+      "id": "R13",
+      "split": "validation",
+      "question": "收不到短信验证码，可以连续点发送吗？",
+      "relevant_ids": [
+        "D04"
+      ],
+      "vector": [
+        "D04",
+        "D05",
+        "D06"
+      ],
+      "hybrid": [
+        "D04",
+        "D12",
+        "D02"
+      ]
+    },
+    {
+      "id": "R14",
+      "split": "validation",
+      "question": "直播回放能缓存后断网观看吗？",
+      "relevant_ids": [
+        "D03"
+      ],
+      "vector": [
+        "D03",
+        "D02",
+        "D10"
+      ],
+      "hybrid": [
+        "D03",
+        "D02",
+        "D10"
+      ]
+    },
+    {
+      "id": "R15",
+      "split": "validation",
+      "question": "比较PAY-E104和PAY-E140的处理办法",
+      "relevant_ids": [
+        "D05",
+        "D06"
+      ],
+      "vector": [
+        "D06",
+        "D05",
+        "D01"
+      ],
+      "hybrid": [
+        "D06",
+        "D05",
+        "D01"
+      ]
+    },
+    {
+      "id": "R16",
+      "split": "validation",
+      "question": "AUTH-R12与AUTH-R21分别代表什么？",
+      "relevant_ids": [
+        "D07",
+        "D08"
+      ],
+      "vector": [
+        "D08",
+        "D07",
+        "D11"
+      ],
+      "hybrid": [
+        "D08",
+        "D07",
+        "D03"
+      ]
+    },
+    {
+      "id": "R17",
+      "split": "validation",
+      "question": "PLAN-A17和PLAN-A71哪个有审计接口？",
+      "relevant_ids": [
+        "D09",
+        "D10"
+      ],
+      "vector": [
+        "D10",
+        "D09",
+        "D11"
+      ],
+      "hybrid": [
+        "D10",
+        "D09",
+        "D07"
+      ]
+    },
+    {
+      "id": "R18",
+      "split": "validation",
+      "question": "员工年假有几天？",
+      "relevant_ids": [],
+      "vector": [
+        "D01",
+        "D09",
+        "D10"
+      ],
+      "hybrid": [
+        "D01",
+        "D09",
+        "D10"
+      ]
+    },
+    {
+      "id": "R19",
+      "split": "validation",
+      "question": "退款到账需要几天？",
+      "relevant_ids": [],
+      "vector": [
+        "D02",
+        "D05",
+        "D01"
+      ],
+      "hybrid": [
+        "D02",
+        "D12",
+        "D07"
+      ]
+    },
+    {
+      "id": "R20",
+      "split": "validation",
+      "question": "管理员邮箱是多少？",
+      "relevant_ids": [],
+      "vector": [
+        "D12",
+        "D04",
+        "D09"
+      ],
+      "hybrid": [
+        "D08",
+        "D09",
+        "D12"
+      ]
+    }
+  ],
+  "scope": "Real embeddings, cached identically for both modes; no answer generation.",
+  "metrics": {
+    "vector": {
+      "1": {
+        "cases": 20,
+        "answerable_cases": 16,
+        "unanswerable_cases": 4,
+        "k": 1,
+        "mean_recall": 0.84375,
+        "hit_count": 15,
+        "mrr": 0.9375
+      },
+      "3": {
+        "cases": 20,
+        "answerable_cases": 16,
+        "unanswerable_cases": 4,
+        "k": 3,
+        "mean_recall": 1.0,
+        "hit_count": 16,
+        "mrr": 0.96875
+      }
+    },
+    "hybrid": {
+      "1": {
+        "cases": 20,
+        "answerable_cases": 16,
+        "unanswerable_cases": 4,
+        "k": 1,
+        "mean_recall": 0.84375,
+        "hit_count": 15,
+        "mrr": 0.9375
+      },
+      "3": {
+        "cases": 20,
+        "answerable_cases": 16,
+        "unanswerable_cases": 4,
+        "k": 3,
+        "mean_recall": 1.0,
+        "hit_count": 16,
+        "mrr": 0.96875
+      }
+    }
+  },
+  "splits": {
+    "development": {
+      "vector": {
+        "cases": 12,
+        "answerable_cases": 11,
+        "unanswerable_cases": 1,
+        "k": 3,
+        "mean_recall": 1.0,
+        "hit_count": 11,
+        "mrr": 0.9545454545454546
+      },
+      "hybrid": {
+        "cases": 12,
+        "answerable_cases": 11,
+        "unanswerable_cases": 1,
+        "k": 3,
+        "mean_recall": 1.0,
+        "hit_count": 11,
+        "mrr": 0.9545454545454546
+      }
+    },
+    "validation": {
+      "vector": {
+        "cases": 8,
+        "answerable_cases": 5,
+        "unanswerable_cases": 3,
+        "k": 3,
+        "mean_recall": 1.0,
+        "hit_count": 5,
+        "mrr": 1.0
+      },
+      "hybrid": {
+        "cases": 8,
+        "answerable_cases": 5,
+        "unanswerable_cases": 3,
+        "k": 3,
+        "mean_recall": 1.0,
+        "hit_count": 5,
+        "mrr": 1.0
+      }
+    }
+  }
+}
