@@ -1,0 +1,19 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.streamlit/secrets.toml
+*.log
+
+# Local runtime data: uploads, registry, vector store, run logs
+vector_store/
+outputs/
+data/processed/
+data/uploads/
+
+# Reruns of the saved experiments
+results/**/rerun.json
+results/no_evidence/live_rerun_*.json

@@ -1,0 +1,20 @@
+[
+  {
+    "question_id": "q001",
+    "question": "员工出差 3 天产生住宿费和交通费，需要提交哪些材料？",
+    "expected_keywords": ["审批单", "有效发票", "行程单", "住宿凭证", "酒店发票"],
+    "source": "enterprise_policy_sample.md"
+  },
+  {
+    "question_id": "q002",
+    "question": "客户申请退款需要满足哪些条件？",
+    "expected_keywords": ["7 天", "核心功能", "全额退款", "部分退款"],
+    "source": "product_faq_sample.md"
+  },
+  {
+    "question_id": "q003",
+    "question": "公司是否提供海外医疗保险？",
+    "expected_keywords": ["资料中没有明确说明"],
+    "source": "none"
+  }
+]
