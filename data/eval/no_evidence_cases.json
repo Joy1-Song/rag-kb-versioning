@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "description": "Self-authored synthetic education-service fixtures. Retrieval is fixed; only generation uses a real model.",
+  "cases": [
+    {"id": "empty-refund", "kind": "no_evidence", "question": "申请退款需要什么材料？", "documents": []},
+    {"id": "empty-activation", "kind": "no_evidence", "question": "付款后课程需要多久开通？", "documents": []},
+    {"id": "empty-offline", "kind": "no_evidence", "question": "课程可以下载后离线观看吗？", "documents": []},
+    {"id": "empty-invoice", "kind": "no_evidence", "question": "如何申请电子发票？", "documents": []},
+    {"id": "blank-support", "kind": "no_evidence", "question": "人工客服几点上班？", "documents": [" \n\t "]},
+    {"id": "blank-device", "kind": "no_evidence", "question": "一个账号支持多少台设备？", "documents": [" ", "\n"]},
+    {"id": "grounded-refund", "kind": "with_evidence", "question": "申请退款需要什么材料？", "documents": ["测试机构退款材料说明：申请人需要提交订单编号与支付凭证。该说明没有规定审核时长。"]},
+    {"id": "grounded-activation", "kind": "with_evidence", "question": "付款后课程需要多久开通？", "documents": ["测试机构课程说明：支付成功后，课程通常在十分钟内开通；超过十分钟仍未开通，可提供订单编号联系人工客服。"]},
+    {"id": "grounded-offline", "kind": "with_evidence", "question": "课程可以下载后离线观看吗？", "documents": ["测试机构课程说明：Python 入门录播课支持在官方手机 App 内下载并离线观看，不支持导出视频文件。"]},
+    {"id": "grounded-invoice", "kind": "with_evidence", "question": "如何申请电子发票？", "documents": ["测试机构开票说明：进入订单详情，选择申请发票，填写发票抬头和接收邮箱。"]}
+  ]
+}

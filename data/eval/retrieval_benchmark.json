@@ -1,0 +1,40 @@
+{
+  "version": "retrieval-v1",
+  "provenance": "Self-authored synthetic evidence and questions; no personal or enterprise data.",
+  "documents": [
+    {"id":"D01","source":"expenses.md","text":"差旅报销：员工结束出差后十个工作日内提交审批单、交通发票和住宿明细。"},
+    {"id":"D02","source":"refund_standard.md","text":"标准课程退款：购课七天内且课程尚未开通，可以提交订单编号申请全额退款。已开通课程须按实际学习进度复核。"},
+    {"id":"D03","source":"offline_course.md","text":"Python 入门录播课支持在手机客户端缓存视频，下载后可离线观看；直播回放不提供离线下载。"},
+    {"id":"D04","source":"account_login.md","text":"登录验证码收不到时，先检查短信拦截设置及手机号；同一手机号一分钟内只允许发送一次验证码。"},
+    {"id":"D05","source":"payment_E104.md","text":"错误码 PAY-E104 表示支付订单已过期。关闭原支付页，重新创建订单后付款，不要反复提交原订单。"},
+    {"id":"D06","source":"payment_E140.md","text":"错误码 PAY-E140 表示支付结果尚未确认。先查询原订单状态，等待支付回调；不要新建订单重复支付。"},
+    {"id":"D07","source":"api_R12.md","text":"接口错误 AUTH-R12 表示访问令牌已过期，需要刷新令牌后重试原请求。"},
+    {"id":"D08","source":"api_R21.md","text":"接口错误 AUTH-R21 表示账号没有资源访问权限，需要由管理员授权；刷新令牌不能新增权限。"},
+    {"id":"D09","source":"plan_A17.md","text":"套餐 PLAN-A17 的数据保留期是三十天，管理员可从控制台导出原始 CSV；该套餐不提供审计 API。"},
+    {"id":"D10","source":"plan_A71.md","text":"套餐 PLAN-A71 的数据保留期是一百八十天，支持审计 API 和定时 CSV 导出。"},
+    {"id":"D11","source":"security_logs.md","text":"系统审计日志记录操作者、请求编号、执行状态和时间戳；不得把密码、令牌或客户完整正文写入日志。"},
+    {"id":"D12","source":"human_review.md","text":"批量生成对外报告前需要人工确认。用户拒绝后任务终止，不生成报告，也不发送邮件。"}
+  ],
+  "cases": [
+    {"id":"R01","split":"development","question":"出差报销需要提交哪些凭证？","relevant_ids":["D01"]},
+    {"id":"R02","split":"development","question":"课程没开通过，买了三天，可以退全款吗？","relevant_ids":["D02"]},
+    {"id":"R03","split":"development","question":"Python入门课没网的时候能看吗？","relevant_ids":["D03"]},
+    {"id":"R04","split":"development","question":"PAY-E104 怎么处理？","relevant_ids":["D05"]},
+    {"id":"R05","split":"development","question":"PAY-E140 可以重新下单支付吗？","relevant_ids":["D06"]},
+    {"id":"R06","split":"development","question":"AUTH-R12 需要管理员授权吗？","relevant_ids":["D07"]},
+    {"id":"R07","split":"development","question":"AUTH-R21 刷新令牌就能解决吗？","relevant_ids":["D08"]},
+    {"id":"R08","split":"development","question":"PLAN-A17 的日志保留多久，支持审计API吗？","relevant_ids":["D09"]},
+    {"id":"R09","split":"development","question":"PLAN-A71 数据保留多久？","relevant_ids":["D10"]},
+    {"id":"R10","split":"development","question":"调用日志可以记录客户密码吗？","relevant_ids":["D11"]},
+    {"id":"R11","split":"development","question":"用户拒绝生成报告后还会发邮件吗？","relevant_ids":["D12"]},
+    {"id":"R12","split":"development","question":"公司提供海外医疗保险吗？","relevant_ids":[]},
+    {"id":"R13","split":"validation","question":"收不到短信验证码，可以连续点发送吗？","relevant_ids":["D04"]},
+    {"id":"R14","split":"validation","question":"直播回放能缓存后断网观看吗？","relevant_ids":["D03"]},
+    {"id":"R15","split":"validation","question":"比较PAY-E104和PAY-E140的处理办法","relevant_ids":["D05","D06"]},
+    {"id":"R16","split":"validation","question":"AUTH-R12与AUTH-R21分别代表什么？","relevant_ids":["D07","D08"]},
+    {"id":"R17","split":"validation","question":"PLAN-A17和PLAN-A71哪个有审计接口？","relevant_ids":["D09","D10"]},
+    {"id":"R18","split":"validation","question":"员工年假有几天？","relevant_ids":[]},
+    {"id":"R19","split":"validation","question":"退款到账需要几天？","relevant_ids":[]},
+    {"id":"R20","split":"validation","question":"管理员邮箱是多少？","relevant_ids":[]}
+  ]
+}
