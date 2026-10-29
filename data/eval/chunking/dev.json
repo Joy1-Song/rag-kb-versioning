@@ -1,0 +1,28 @@
+{
+  "split": "development",
+  "note": "Used to pick chunk_size / overlap / top_k. Evidence = exact sentences from the corpus that a correct answer needs.",
+  "cases": [
+    {"id": "D01", "doc": "attendance_leave.md", "question": "工作满 12 年的员工一年有几天年假？", "evidence": ["满 10 年不满 20 年的，年休假 10 天"]},
+    {"id": "D02", "doc": "attendance_leave.md", "question": "今年的年假没休完，能留到明年吗？有什么限制？", "evidence": ["当年未休完的年休假可以结转至次年", "须在次年 3 月 31 日前休完，逾期作废"]},
+    {"id": "D03", "doc": "attendance_leave.md", "question": "连续请 4 天病假需要什么证明？工资怎么发？", "evidence": ["连续病假 3 天以上的，须提供二级及以上医院的诊断证明", "病假期间工资按本人基本工资的 80% 发放"]},
+    {"id": "D04", "doc": "attendance_leave.md", "question": "远程办公一周最多几天？试用期能申请吗？", "evidence": ["每周最多 2 天", "试用期员工不适用远程办公"]},
+    {"id": "D05", "doc": "attendance_leave.md", "question": "迟到 10 分钟会扣钱吗？", "evidence": ["迟到或早退 15 分钟以内的，每月累计不超过 3 次不扣薪", "自第 4 次起每次扣除 50 元"]},
+    {"id": "D06", "doc": "expense_reimbursement.md", "question": "去深圳出差，住宿每晚能报多少？", "evidence": ["北京、上海、广州、深圳每晚不超过 600 元"]},
+    {"id": "D07", "doc": "expense_reimbursement.md", "question": "出差什么情况下可以坐飞机？", "evidence": ["单程超过 4 小时或无直达高铁的，可乘坐飞机经济舱"]},
+    {"id": "D08", "doc": "expense_reimbursement.md", "question": "出差当天来回，伙食补助有多少？", "evidence": ["每天发放伙食补助 100 元", "出差当天往返的，伙食补助减半"]},
+    {"id": "D09", "doc": "expense_reimbursement.md", "question": "报销最晚多久之内要提交？", "evidence": ["费用应在发生后 30 天内提交报销申请", "超过 90 天的不予报销"]},
+    {"id": "D10", "doc": "expense_reimbursement.md", "question": "一笔 8000 元的报销需要谁审批？", "evidence": ["5000 元至 20000 元由部门负责人和财务经理审批"]},
+    {"id": "D11", "doc": "after_sales_refund.md", "question": "收货第 5 天想无理由退货，运费谁出？", "evidence": ["自签收之日起 7 天内，商品未拆封、不影响二次销售的，可申请无理由退货，退回运费由买家承担"]},
+    {"id": "D12", "doc": "after_sales_refund.md", "question": "买了 20 天的东西出现质量问题，能退款吗？", "evidence": ["自签收之日起 30 天内，商品出现质量问题且经平台检测确认的，可申请退款"]},
+    {"id": "D13", "doc": "after_sales_refund.md", "question": "用微信支付的订单，退款多久到账？", "evidence": ["微信和支付宝 1 至 3 个工作日到账"]},
+    {"id": "D14", "doc": "after_sales_refund.md", "question": "会员课买了 5 天、只学了 10%，能全额退款吗？", "evidence": ["自购买之日起 7 天内且学习进度不超过 20% 的，可申请全额退款"]},
+    {"id": "D15", "doc": "information_security.md", "question": "办公系统密码多久换一次？能用以前的密码吗？", "evidence": ["每 90 天更换一次，新密码不得与最近 5 次使用的密码相同"]},
+    {"id": "D16", "doc": "information_security.md", "question": "公司电脑丢了应该怎么办？", "evidence": ["须在发现后 24 小时内向信息安全部报告"]},
+    {"id": "D17", "doc": "information_security.md", "question": "把客户个人信息发给外部合作方，需要什么审批？", "evidence": ["客户个人信息、财务数据属于机密级", "发送机密级数据须经部门负责人和信息安全部双重审批"]},
+    {"id": "D18", "doc": "information_security.md", "question": "不小心点了钓鱼邮件里的链接怎么办？", "evidence": ["须立即断开网络并在 1 小时内联系 IT 服务台"]},
+    {"id": "D19", "doc": "attendance_leave.md", "question": "加班换来的调休多久内要用掉？", "evidence": ["调休须在加班发生之日起 6 个月内使用"]},
+    {"id": "D20", "doc": "attendance_leave.md", "question": "婚假有几天？可以分开休吗？", "evidence": ["可享受婚假 10 天（含公休日）", "须在领取结婚证后 1 年内一次性休完，不可分次使用"]},
+    {"id": "D21", "doc": "attendance_leave.md", "question": "入职当年的年假怎么算？离职时没休完的年假怎么处理？", "evidence": ["员工入职当年的年休假按剩余自然日折算", "当年已过日数对应的未休年休假按日工资的 100% 折算发放"]},
+    {"id": "D22", "doc": "after_sales_refund.md", "question": "公司团购开通的会员课，我能自己申请退款吗？学习进度怎么算？", "evidence": ["退款须由企业管理员统一申请，个人不能单独申请", "学习进度以平台记录的已观看课时为准"]}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "split": "test",
+  "note": "Frozen before any run. Never used to pick a configuration; reported once for the configuration chosen on the development set and for the current default.",
+  "cases": [
+    {"id": "T01", "doc": "attendance_leave.md", "question": "工作满 5 年的员工有几天年假？", "evidence": ["累计工作满 1 年不满 10 年的，年休假 5 天"]},
+    {"id": "T02", "doc": "attendance_leave.md", "question": "刚入职半年可以休年假吗？", "evidence": ["员工入职满 12 个月后，方可享受带薪年休假"]},
+    {"id": "T03", "doc": "attendance_leave.md", "question": "请病假的证明什么时候交？", "evidence": ["在返岗后 3 个工作日内补交医疗机构出具的病假证明"]},
+    {"id": "T04", "doc": "attendance_leave.md", "question": "事假一年最多能请多少天？", "evidence": ["单次事假不超过 3 天，全年累计不超过 15 天"]},
+    {"id": "T05", "doc": "attendance_leave.md", "question": "陪产假有多少天？什么时候要休完？", "evidence": ["男员工在配偶生育期间享受陪产假 15 天，须在配偶生育后 3 个月内休完"]},
+    {"id": "T06", "doc": "attendance_leave.md", "question": "忘记打卡怎么补？一个月能补几次？", "evidence": ["应在 2 个工作日内在系统中提交补卡申请", "每月补卡次数不超过 3 次"]},
+    {"id": "T07", "doc": "expense_reimbursement.md", "question": "去杭州出差，住宿标准是多少？", "evidence": ["其他省会城市及计划单列市每晚不超过 450 元"]},
+    {"id": "T08", "doc": "expense_reimbursement.md", "question": "请客户吃饭人均上限多少？酒水能报销吗？", "evidence": ["人均标准不超过 200 元", "招待饮酒费用不予报销"]},
+    {"id": "T09", "doc": "expense_reimbursement.md", "question": "电子发票报销要交什么？", "evidence": ["电子发票须同时上传 PDF 原件，不接受截图"]},
+    {"id": "T10", "doc": "expense_reimbursement.md", "question": "出差借备用金最多借多少？什么时候还？", "evidence": ["单次借款不超过 5000 元", "须在出差结束后 10 个工作日内办理报销并归还余款"]},
+    {"id": "T11", "doc": "expense_reimbursement.md", "question": "12 月发生的费用最晚什么时候报？", "evidence": ["每年 12 月发生的费用须在次年 1 月 10 日前提交"]},
+    {"id": "T12", "doc": "after_sales_refund.md", "question": "收货第 10 天发现质量问题，能换货吗？运费谁出？", "evidence": ["自签收之日起 15 天内，商品出现非人为损坏的质量问题，可申请换货，往返运费由平台承担"]},
+    {"id": "T13", "doc": "after_sales_refund.md", "question": "买了两个月的商品坏了，还能退款吗？", "evidence": ["超过 30 天但在保修期内的，只提供维修服务，不予退款"]},
+    {"id": "T14", "doc": "after_sales_refund.md", "question": "用了优惠券的订单退款，优惠券会退回来吗？", "evidence": ["使用优惠券的订单，优惠券部分不予退还"]},
+    {"id": "T15", "doc": "after_sales_refund.md", "question": "退货的时候赠品弄丢了怎么办？", "evidence": ["赠品缺失的，按赠品标价从退款中扣除"]},
+    {"id": "T16", "doc": "after_sales_refund.md", "question": "直播课开课以后还能退吗？", "evidence": ["直播课开课后不予退款"]},
+    {"id": "T17", "doc": "information_security.md", "question": "出差时能用酒店的公共电脑登录公司系统吗？", "evidence": ["禁止在网吧、酒店公共电脑等不受控设备上登录内部系统"]},
+    {"id": "T18", "doc": "information_security.md", "question": "还没公开的并购信息能发给外部顾问吗？", "evidence": ["未公开的并购和融资信息属于绝密级", "绝密级数据原则上禁止外发"]},
+    {"id": "T19", "doc": "information_security.md", "question": "新员工的安全培训什么时候完成？考多少分算及格？", "evidence": ["新员工须在入职后 30 天内完成信息安全培训并通过考试", "考试成绩 80 分及以上为合格"]},
+    {"id": "T20", "doc": "information_security.md", "question": "密码连续输错会怎么样？", "evidence": ["连续输错 5 次密码的账号将被锁定 30 分钟"]},
+    {"id": "T21", "doc": "attendance_leave.md", "question": "工龄怎么认定？以前公司的工龄算不算？", "evidence": ["累计工作年限以社会保险缴纳记录为准", "未提交的按本公司工龄计算"]},
+    {"id": "T22", "doc": "after_sales_refund.md", "question": "会员课买了 10 天、学了一半，怎么退？", "evidence": ["超过 7 天或学习进度超过 20% 的，按未学习课时占总课时的比例退款", "并扣除已赠送学习资料的费用"]}
+  ]
+}

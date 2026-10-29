@@ -1,0 +1,610 @@
+{
+  "embedding_model": "text-embedding-v4",
+  "frozen": {
+    "frozen_at": "2026-10-29T12:31:36+00:00",
+    "test_sha256": "dfd1ae77a682abc243552659c47e186f2713b3a34e9b56535bd2e17737a27846",
+    "corpus_sha256": {
+      "after_sales_refund.md": "4fba3974602fd52982b5e47e68ec5f91533bbdab828fd4ebcdf9c9365844e134",
+      "attendance_leave.md": "532abf27c5ef43b5222882147df362799e6ccfaa9661e10c0e7c02c84e4a5f64",
+      "expense_reimbursement.md": "25220b5f614f9bbb5577f35f6a3801df2e52358a2326215447c0f2e0253d015a",
+      "information_security.md": "ba0d57981cbf389d74e370bc85dea50149a78e8cf333b0fc580828e1c1e26e50"
+    },
+    "grid": {
+      "chunk_size": [
+        200,
+        400,
+        600,
+        800
+      ],
+      "chunk_overlap": [
+        0,
+        100
+      ],
+      "top_k": [
+        2,
+        4,
+        6
+      ]
+    },
+    "current_default": {
+      "chunk_size": 600,
+      "chunk_overlap": 100,
+      "top_k": 4
+    },
+    "selection_rule": "On the development set only: highest full-evidence hit rate; ties broken by the smaller mean context length (characters); remaining ties by the smaller top_k, then the smaller chunk_size. The test set is then scored once for the chosen configuration and for the current default."
+  },
+  "corpus_chars": {
+    "after_sales_refund.md": 764,
+    "attendance_leave.md": 1495,
+    "expense_reimbursement.md": 872,
+    "information_security.md": 705
+  },
+  "chunks_per_layout": {
+    "200/0": 25,
+    "200/100": 33,
+    "400/0": 13,
+    "400/100": 15,
+    "600/0": 9,
+    "600/100": 9,
+    "800/0": 7,
+    "800/100": 7
+  },
+  "dev": {
+    "200/0/top2": {
+      "cases": 22,
+      "full_hit": 22,
+      "evidence_recall": 1.0,
+      "mean_context_chars": 318.3,
+      "misses": []
+    },
+    "200/0/top4": {
+      "cases": 22,
+      "full_hit": 22,
+      "evidence_recall": 1.0,
+      "mean_context_chars": 626.3,
+      "misses": []
+    },
+    "200/0/top6": {
+      "cases": 22,
+      "full_hit": 22,
+      "evidence_recall": 1.0,
+      "mean_context_chars": 905.1,
+      "misses": []
+    },
+    "200/100/top2": {
+      "cases": 22,
+      "full_hit": 22,
+      "evidence_recall": 1.0,
+      "mean_context_chars": 324.7,
+      "misses": []
+    },
+    "200/100/top4": {
+      "cases": 22,
+      "full_hit": 22,
+      "evidence_recall": 1.0,
+      "mean_context_chars": 651.1,
+      "misses": []
+    },
+    "200/100/top6": {
+      "cases": 22,
+      "full_hit": 22,
+      "evidence_recall": 1.0,
+      "mean_context_chars": 962.2,
+      "misses": []
+    },
+    "400/0/top2": {
+      "cases": 22,
+      "full_hit": 21,
+      "evidence_recall": 0.9375,
+      "mean_context_chars": 624.2,
+      "misses": [
+        "D09"
+      ]
+    },
+    "400/0/top4": {
+      "cases": 22,
+      "full_hit": 22,
+      "evidence_recall": 1.0,
+      "mean_context_chars": 1087.2,
+      "misses": []
+    },
+    "400/0/top6": {
+      "cases": 22,
+      "full_hit": 22,
+      "evidence_recall": 1.0,
+      "mean_context_chars": 1601.2,
+      "misses": []
+    },
+    "400/100/top2": {
+      "cases": 22,
+      "full_hit": 21,
+      "evidence_recall": 0.9375,
+      "mean_context_chars": 587.2,
+      "misses": [
+        "D09"
+      ]
+    },
+    "400/100/top4": {
+      "cases": 22,
+      "full_hit": 21,
+      "evidence_recall": 0.9375,
+      "mean_context_chars": 1082.0,
+      "misses": [
+        "D09"
+      ]
+    },
+    "400/100/top6": {
+      "cases": 22,
+      "full_hit": 22,
+      "evidence_recall": 1.0,
+      "mean_context_chars": 1644.4,
+      "misses": []
+    },
+    "600/0/top2": {
+      "cases": 22,
+      "full_hit": 22,
+      "evidence_recall": 1.0,
+      "mean_context_chars": 839.7,
+      "misses": []
+    },
+    "600/0/top4": {
+      "cases": 22,
+      "full_hit": 22,
+      "evidence_recall": 1.0,
+      "mean_context_chars": 1627.5,
+      "misses": []
+    },
+    "600/0/top6": {
+      "cases": 22,
+      "full_hit": 22,
+      "evidence_recall": 1.0,
+      "mean_context_chars": 2385.6,
+      "misses": []
+    },
+    "600/100/top2": {
+      "cases": 22,
+      "full_hit": 22,
+      "evidence_recall": 1.0,
+      "mean_context_chars": 882.8,
+      "misses": []
+    },
+    "600/100/top4": {
+      "cases": 22,
+      "full_hit": 22,
+      "evidence_recall": 1.0,
+      "mean_context_chars": 1767.6,
+      "misses": []
+    },
+    "600/100/top6": {
+      "cases": 22,
+      "full_hit": 22,
+      "evidence_recall": 1.0,
+      "mean_context_chars": 2564.1,
+      "misses": []
+    },
+    "800/0/top2": {
+      "cases": 22,
+      "full_hit": 20,
+      "evidence_recall": 0.875,
+      "mean_context_chars": 846.3,
+      "misses": [
+        "D05",
+        "D09"
+      ]
+    },
+    "800/0/top4": {
+      "cases": 22,
+      "full_hit": 22,
+      "evidence_recall": 1.0,
+      "mean_context_chars": 1765.9,
+      "misses": []
+    },
+    "800/0/top6": {
+      "cases": 22,
+      "full_hit": 22,
+      "evidence_recall": 1.0,
+      "mean_context_chars": 3085.9,
+      "misses": []
+    },
+    "800/100/top2": {
+      "cases": 22,
+      "full_hit": 21,
+      "evidence_recall": 0.9375,
+      "mean_context_chars": 903.5,
+      "misses": [
+        "D09"
+      ]
+    },
+    "800/100/top4": {
+      "cases": 22,
+      "full_hit": 22,
+      "evidence_recall": 1.0,
+      "mean_context_chars": 1812.5,
+      "misses": []
+    },
+    "800/100/top6": {
+      "cases": 22,
+      "full_hit": 22,
+      "evidence_recall": 1.0,
+      "mean_context_chars": 3176.9,
+      "misses": []
+    }
+  },
+  "chosen": "200/0/top2",
+  "default": "600/100/top4",
+  "test": {
+    "200/0/top2": {
+      "cases": 22,
+      "full_hit": 21,
+      "evidence_recall": 0.9655,
+      "mean_context_chars": 334.4,
+      "misses": [
+        "T17"
+      ],
+      "rows": [
+        {
+          "id": "T01",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 395,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T02",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 329,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T03",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 306,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T04",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 365,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T05",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 365,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T06",
+          "full_hit": true,
+          "evidence_hit": 2,
+          "evidence_total": 2,
+          "context_chars": 200,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T07",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 320,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T08",
+          "full_hit": true,
+          "evidence_hit": 2,
+          "evidence_total": 2,
+          "context_chars": 320,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T09",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 348,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T10",
+          "full_hit": true,
+          "evidence_hit": 2,
+          "evidence_total": 2,
+          "context_chars": 346,
+          "same_doc_chunks": 1
+        },
+        {
+          "id": "T11",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 349,
+          "same_doc_chunks": 1
+        },
+        {
+          "id": "T12",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 322,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T13",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 322,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T14",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 329,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T15",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 329,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T16",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 337,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T17",
+          "full_hit": false,
+          "evidence_hit": 0,
+          "evidence_total": 1,
+          "context_chars": 323,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T18",
+          "full_hit": true,
+          "evidence_hit": 2,
+          "evidence_total": 2,
+          "context_chars": 351,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T19",
+          "full_hit": true,
+          "evidence_hit": 2,
+          "evidence_total": 2,
+          "context_chars": 349,
+          "same_doc_chunks": 1
+        },
+        {
+          "id": "T20",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 347,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T21",
+          "full_hit": true,
+          "evidence_hit": 2,
+          "evidence_total": 2,
+          "context_chars": 368,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T22",
+          "full_hit": true,
+          "evidence_hit": 2,
+          "evidence_total": 2,
+          "context_chars": 337,
+          "same_doc_chunks": 2
+        }
+      ]
+    },
+    "600/100/top4": {
+      "cases": 22,
+      "full_hit": 22,
+      "evidence_recall": 1.0,
+      "mean_context_chars": 1696.5,
+      "misses": [],
+      "rows": [
+        {
+          "id": "T01",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 1733,
+          "same_doc_chunks": 3
+        },
+        {
+          "id": "T02",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 1733,
+          "same_doc_chunks": 3
+        },
+        {
+          "id": "T03",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 1733,
+          "same_doc_chunks": 3
+        },
+        {
+          "id": "T04",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 1942,
+          "same_doc_chunks": 3
+        },
+        {
+          "id": "T05",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 1733,
+          "same_doc_chunks": 3
+        },
+        {
+          "id": "T06",
+          "full_hit": true,
+          "evidence_hit": 2,
+          "evidence_total": 2,
+          "context_chars": 1733,
+          "same_doc_chunks": 3
+        },
+        {
+          "id": "T07",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 1951,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T08",
+          "full_hit": true,
+          "evidence_hit": 2,
+          "evidence_total": 2,
+          "context_chars": 1628,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T09",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 1441,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T10",
+          "full_hit": true,
+          "evidence_hit": 2,
+          "evidence_total": 2,
+          "context_chars": 1951,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T11",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 1713,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T12",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 1760,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T13",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 1621,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T14",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 1713,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T15",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 1434,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T16",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 1573,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T17",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 1714,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T18",
+          "full_hit": true,
+          "evidence_hit": 2,
+          "evidence_total": 2,
+          "context_chars": 1482,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T19",
+          "full_hit": true,
+          "evidence_hit": 2,
+          "evidence_total": 2,
+          "context_chars": 1783,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T20",
+          "full_hit": true,
+          "evidence_hit": 1,
+          "evidence_total": 1,
+          "context_chars": 1460,
+          "same_doc_chunks": 2
+        },
+        {
+          "id": "T21",
+          "full_hit": true,
+          "evidence_hit": 2,
+          "evidence_total": 2,
+          "context_chars": 1733,
+          "same_doc_chunks": 3
+        },
+        {
+          "id": "T22",
+          "full_hit": true,
+          "evidence_hit": 2,
+          "evidence_total": 2,
+          "context_chars": 1760,
+          "same_doc_chunks": 2
+        }
+      ]
+    }
+  },
+  "scope": "Self-written corpus (4 policies, ~3.8k characters) and questions; retrieval only, no answer generation."
+}

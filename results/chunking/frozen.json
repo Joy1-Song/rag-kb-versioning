@@ -1,0 +1,33 @@
+{
+  "frozen_at": "2026-10-29T12:31:36+00:00",
+  "test_sha256": "dfd1ae77a682abc243552659c47e186f2713b3a34e9b56535bd2e17737a27846",
+  "corpus_sha256": {
+    "after_sales_refund.md": "4fba3974602fd52982b5e47e68ec5f91533bbdab828fd4ebcdf9c9365844e134",
+    "attendance_leave.md": "532abf27c5ef43b5222882147df362799e6ccfaa9661e10c0e7c02c84e4a5f64",
+    "expense_reimbursement.md": "25220b5f614f9bbb5577f35f6a3801df2e52358a2326215447c0f2e0253d015a",
+    "information_security.md": "ba0d57981cbf389d74e370bc85dea50149a78e8cf333b0fc580828e1c1e26e50"
+  },
+  "grid": {
+    "chunk_size": [
+      200,
+      400,
+      600,
+      800
+    ],
+    "chunk_overlap": [
+      0,
+      100
+    ],
+    "top_k": [
+      2,
+      4,
+      6
+    ]
+  },
+  "current_default": {
+    "chunk_size": 600,
+    "chunk_overlap": 100,
+    "top_k": 4
+  },
+  "selection_rule": "On the development set only: highest full-evidence hit rate; ties broken by the smaller mean context length (characters); remaining ties by the smaller top_k, then the smaller chunk_size. The test set is then scored once for the chosen configuration and for the current default."
+}
